@@ -30,8 +30,6 @@ In this unit, coders will create a Rock, Paper, Scissors game. The Rock, Paper, 
 - [ ] In your click handler, generate a random number and assign it to the randomNumber variable
 - [ ] In your click handler, store the input value in a variable	
 - [ ] In your click handler, display user input to the screen
-#### Wrap
-- [ ] Push your changes!
 
 ## Day 3
 
@@ -42,8 +40,6 @@ In this unit, coders will create a Rock, Paper, Scissors game. The Rock, Paper, 
 - [ ] Display the winner to the screen in a div
 - [ ] Clear the input value once a result is displayed
 
-#### Wrap
-- [ ] Push your changes!
 
 ## Projects Extensions:
 - [ ] Style the page to fit your personality
