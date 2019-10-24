@@ -5,7 +5,11 @@
 //GLOBAL VARIABLES
 /* global $ */
 
+$("#shoot").click(function(){
+  let playerMove = $("#input").val();
+});
 
+let randomNumber = Math.random();
 
 // DOCUMENT READY FUNCTION BELOW
 
