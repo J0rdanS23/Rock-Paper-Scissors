@@ -11,6 +11,6 @@ $("#shoot").click(function(){
 
 let randomNumber = Math.random();
 randomNumber = randomNumber * 3
-
+randomNumber = Math.floor(randomNumber);
 // DOCUMENT READY FUNCTION BELOW
 
