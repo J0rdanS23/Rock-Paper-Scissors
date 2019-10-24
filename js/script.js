@@ -10,6 +10,7 @@ $("#shoot").click(function(){
 });
 
 let randomNumber = Math.random();
+randomNumber = randomNumber * 3
 
 // DOCUMENT READY FUNCTION BELOW
 
