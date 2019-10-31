@@ -7,41 +7,45 @@
 
   var moves = ["rock","paper","scissors"]
   var numberX = Math.random();
-  var numberY = numberX* 3
+  var numberY = numberX* 3;
   var numberN = Math.floor(numberY);
-  console.log(numberN)
+  var numberC = moves[numberN];
 
 $("#shoot").click(function(){
   let playerInput = $("#input").val();
   var playerMove = playerInput.toLowerCase();
+  $("#userChoice").append(playerMove);
+  $("#computerChoice").append(numberC);
   
   if (playerMove === "rock"){
     
-      if (numberN === "rock"){
-        $("#result").append("Tie!")
-      }else if (numberN === "paper"){
-        $("#result").append("Bot Wins!")
-      }else if (numberN === "scissors"){
-        $("#result").append("Player Wins!")
+      if (numberC === "rock"){
+        $("#result").append("Tie!");
+      }else if (numberC === "paper"){
+        $("#result").append("Bot Wins!");
+      }else if (numberC === "scissors"){
+        $("#result").append("Player Wins!");
       }
   
   }else if (playerMove === "paper"){
     
-    if (numberN === "rock"){
-        $("#result").append("Player Wins!")
-      }else if (numberN === "paper"){
-        $("#result").append("Tie!")
-      }else if (numberN === "scissors"){
-        $("#result").append("Bot Wins!")
+    if (numberC === "rock"){
+        $("#result").append("Player Wins!");
+      }else if (numberC === "paper"){
+        $("#result").append("Tie!");
+      }else if (numberC === "scissors"){
+        $("#result").append("Bot Wins!");
       }
   }else if (playerMove === "scissors")
-        $("#result").append("Player Wins!")
-      }else if (numberN === "paper"){
-        $("#result").append("Player Wins!")
-      }else if (numberN === "scissors"){
-        $("#result").append("Bot Wins!")
+      if (numberC === "rock"){
+        $("#result").append("Bot Wins!");
+      }else if (numberC === "paper"){
+        $("#result").append("Player Wins!");
+      }else if (numberC === "scissors"){
+        $("#result").append("Tie!");
       }
-  }
+  
+                                  
   
 });
 
