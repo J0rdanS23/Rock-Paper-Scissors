@@ -6,11 +6,21 @@
 /* global $ */
 
 $("#shoot").click(function(){
-  let playerMove = $("#input").val();
+  let playerInput = $("#input").val();
+  var playerMove = playerInput.toLowerCase();
+  botMove();
+  
+  if (playerMove === "rock"){
+      if (numberN = "rokc")
+      }
 });
 
-let randomNumber = Math.random();
-randomNumber = randomNumber * 3
-randomNumber = Math.floor(randomNumber);
+function botMove(){
+var moves = ["rock","paper","scissors"]
+var numberX = Math.random();
+var numberY = numberX* 3
+var numberN = Math.floor(numberY);
+}
+
 // DOCUMENT READY FUNCTION BELOW
 
