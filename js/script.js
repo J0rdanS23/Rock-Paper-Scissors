@@ -10,7 +10,8 @@
   var numberY = numberX* 3;
   var numberN = Math.floor(numberY);
   var numberC = moves[numberN];
-  var scoreboard = 
+  var PlayerScore = 0
+  var ComputerScore = 0
 
 $("#shoot").click(function(){
   let playerInput = $("#input").val();
@@ -24,8 +25,12 @@ $("#shoot").click(function(){
         $("#result").text("Tie!");
       }else if (numberC === "paper"){
         $("#result").text("Bot Wins!");
+        ComputerScore = ComputerScore + 1;
+        $("#computerScoreTotal").text(ComputerScore);
       }else if (numberC === "scissors"){
         $("#result").text("Player Wins!");
+        PlayerScore = PlayerScore + 1;
+        $("#playerScoreTotal").text(PlayerScore);
       }
   
   }else if (playerMove === "paper"){

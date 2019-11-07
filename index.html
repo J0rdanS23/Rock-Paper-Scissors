@@ -15,26 +15,27 @@
      -->
 
     <div class="row">
-      <h1>Rock Paper Scissors</h1>
+      <h1 class="text">Rock Paper Scissors</h1>
       <img src="http://www.coltnews.com/wp-content/uploads/2016/04/RPS.png" />
 
-      <h3>Please Submit Your Choice Below</h3>
-      <h3 id="ScoreBoard"></h3>
-      
+      <h3 class="text">Please Submit Your Choice Below</h3>
+      <div class="row">
+      <h3 class="text">Player:<span id="playerScoreTotal">0</span></h3> 
+      <h3 class="text">Computer: <span id="computerScoreTotal">0</span></h3>
       <div>
         <input id="input" />
         <button id="shoot">Shoot!</button>
       </div>
 
-      <div id="choices" class="row">
+      <div id="choices" class="row score">
         
         <div>
-          <h4>User Choice</h4>
-          <p id="userChoice"></p>
+          <h4 class="text">User Choice</h4>
+          <p id="userChoice" class="text"></p>
         </div>
         <div>
-          <h4>Computer Choice</h4>
-          <p id="computerChoice"></p>
+          <h4 class="text">Computer Choice</h4>
+          <p id="computerChoice" class="text"></p>
         </div>
       </div>
       <div id="result"></div>
