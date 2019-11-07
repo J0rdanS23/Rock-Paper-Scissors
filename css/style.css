@@ -17,11 +17,18 @@ body{
 
 .text{
   background-color:white;
-  border: solid; 
+  border: solid orange; 
 }
 
 .score{
   display:flex;
   justify-content:space-around;
+}
+button{
+  text: bold;
+  font-size: 18px;
+  color: blue;
+  border: solid Orange;
+  background-color: white;
 }
 
