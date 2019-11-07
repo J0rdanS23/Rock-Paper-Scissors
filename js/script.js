@@ -37,16 +37,24 @@ $("#shoot").click(function(){
     
     if (numberC === "rock"){
         $("#result").text("Player Wins!");
+        PlayerScore = PlayerScore + 1;
+        $("#playerScoreTotal").text(PlayerScore);
       }else if (numberC === "paper"){
         $("#result").text("Tie!");
       }else if (numberC === "scissors"){
         $("#result").text("Bot Wins!");
+        ComputerScore = ComputerScore + 1;
+        $("#computerScoreTotal").text(ComputerScore);
       }
   }else if (playerMove === "scissors")
       if (numberC === "rock"){
         $("#result").text("Bot Wins!");
+        ComputerScore = ComputerScore + 1;
+        $("#computerScoreTotal").text(ComputerScore);
       }else if (numberC === "paper"){
         $("#result").text("Player Wins!");
+        PlayerScore = PlayerScore + 1;
+        $("#playerScoreTotal").text(PlayerScore);
       }else if (numberC === "scissors"){
         $("#result").text("Tie!");
       }
