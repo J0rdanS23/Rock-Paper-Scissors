@@ -10,39 +10,40 @@
   var numberY = numberX* 3;
   var numberN = Math.floor(numberY);
   var numberC = moves[numberN];
+  var scoreboard = 
 
 $("#shoot").click(function(){
   let playerInput = $("#input").val();
   var playerMove = playerInput.toLowerCase();
-  $("#userChoice").append(playerMove);
-  $("#computerChoice").append(numberC);
+  $("#userChoice").text(playerMove);
+  $("#computerChoice").text(numberC);
   
   if (playerMove === "rock"){
     
       if (numberC === "rock"){
-        $("#result").append("Tie!");
+        $("#result").text("Tie!");
       }else if (numberC === "paper"){
-        $("#result").append("Bot Wins!");
+        $("#result").text("Bot Wins!");
       }else if (numberC === "scissors"){
-        $("#result").append("Player Wins!");
+        $("#result").text("Player Wins!");
       }
   
   }else if (playerMove === "paper"){
     
     if (numberC === "rock"){
-        $("#result").append("Player Wins!");
+        $("#result").text("Player Wins!");
       }else if (numberC === "paper"){
-        $("#result").append("Tie!");
+        $("#result").text("Tie!");
       }else if (numberC === "scissors"){
-        $("#result").append("Bot Wins!");
+        $("#result").text("Bot Wins!");
       }
   }else if (playerMove === "scissors")
       if (numberC === "rock"){
-        $("#result").append("Bot Wins!");
+        $("#result").text("Bot Wins!");
       }else if (numberC === "paper"){
-        $("#result").append("Player Wins!");
+        $("#result").text("Player Wins!");
       }else if (numberC === "scissors"){
-        $("#result").append("Tie!");
+        $("#result").text("Tie!");
       }
   
                                   
